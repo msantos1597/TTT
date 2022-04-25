@@ -18,9 +18,10 @@ var gameWon = false;
 const boxes = document.querySelectorAll('.box');
 startGame();
 
+//function to start game
 function startGame() {
     document.querySelector('.end').style.display = "None";
-  document.querySelector('button').style.display = "None";
+    document.querySelector('button').style.display = "None";
     Board = Array.from(Array(9).keys());
     gameWon = false;
     for(var i = 0; i < boxes.length; i++) {
