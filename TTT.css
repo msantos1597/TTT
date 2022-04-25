@@ -26,6 +26,28 @@ body{
       border: rgba(30,144,255, .6);
   }
   
+  button2{
+    width: 150px;
+    top: 475px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.85em;
+    border: 3px solid #333;
+}
+
+button2:hover{
+  background-color: pink;
+  cursor: pointer;
+}
+
   td {
       border: 3px solid #333;
       height: 100px;
