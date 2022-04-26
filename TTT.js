@@ -36,15 +36,15 @@ function turnClick(square) {
         console.log(square.target.id);
         turn(square.target.id, Human);
 
-        if(!gameWon) {
-            if(!checkTie()) turn(bestSpot(), Ai);
+        if(!gameWon) { setTimeout(() => {
+            if(!checkTie()) turn(bestSpot(), Ai); }, 200);
         }
     }
 }
 
 function turn(squareId, player) {
     Board[squareId] = player;
-    document.getElementById(squareId).innerText = player;
+    document.getElementById(squareId).innerText = player;;
     let gameWon = checkWin(Board, player);
     if(gameWon) gameOver(gameWon);
 }
