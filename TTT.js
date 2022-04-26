@@ -97,7 +97,7 @@ function checkTie() {
     }
     return false;
 }
-
+//test commit1
 function declareWinner(who) {
     gameWon = true;
     console.log(who);
@@ -117,7 +117,7 @@ function minimax(newBoard, player) {
     else if(availSpots.length === 0) {
         return {score: 0};
     }
-
+//test
     var moves = [];
     for (var i = 0; i < availSpots.length; i++) {
         var move = {};
