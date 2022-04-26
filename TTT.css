@@ -64,6 +64,90 @@ button2:hover {
     cursor: pointer;
 }
 
+
+/* Nav Bar*/
+nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 500px;
+    height: 60px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-20%);
+  }
+  
+  nav a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+  }
+  
+  nav a:before,
+  nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+  }
+  
+  nav a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  nav a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+  }
+
+  
+  #indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+  }
+  
+  nav a:hover {
+    color: grey;
+  }
+  
+  nav a:hover:before,
+  nav a:hover:after {
+    transform: scale(1);
+  }
+  
+  nav a:nth-child(1):hover ~ #indicator {
+    left: 34%;
+  }
+  
+  nav a:nth-child(2):hover ~ #indicator {
+    left: 48%;
+  }
+  
+  nav a:nth-child(3):hover ~ #indicator {
+    left: 75%;
+  }
+
+
+/*Tic-Tac-Toe Table*/
 td {
     border: 3px solid #333;
     height: 100px;
@@ -117,8 +201,9 @@ table tr td:last-child {
     border-radius: 5px;
     color: white;
     font-size: 2em;
-}
 
+    
+}/*Score Counter*/
 .game-scores{
     margin-top: 10px;
     font-size: 1;
