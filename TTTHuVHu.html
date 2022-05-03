@@ -14,7 +14,7 @@
 </div>
 <div class="bg1">
     <nav class="navMenu">
-      <a href="TTThome.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="TTTHu.html">Human-vs-AI</a>
       <a href="TTTAI.html">AI-vs-AI</a>
       <a href="TTTHuVHu.html">Human-vs-Human</a>
@@ -23,7 +23,8 @@
     <br>
 
   </div>
-<div1> 
+<div1>
+  <div class="pturn"></div>
 <table>
             <tr>
                 <td class="box" id="0"></td>
@@ -41,12 +42,13 @@
                 <td class="box" id="8"></td>
             </tr>
         </table>
-
+        <div class="pturn">
+        </div>
         <div class="end">
             <div class="text"></div>
         </div>
-        <button onclick="startGame()">Replay</button>
-        <button2 onclick="startGame()">Restart</button2>
+        <button onclick="startGame(), playerRand()">Replay</button>
+        <button2 onclick="startGame(), playerRand()">Restart</button2>
 </body>
-<script src="TTT.js"></script>
+<script src="scriptHuVHu.js"></script>
 </html>
